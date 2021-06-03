@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LihatBuku</string>
+    <string name="books_name">Nama Buku</string>
+    <string name="detail">Detail</string>
+    <string name="favorite">Favorite</string>
+    <string name="tahun_terbit">Tahun Terbit</string>
+    <string name="content_text">Keterangan</string>
+    <string name="book_info">Informasi Buku</string>
+    <string name="book_author">Pengarang</string>
+    <string name="content_author">Konten Pengarang</string>
+    <string name="display_penerbit">Penerbit</string>
+    <string name="contain_penerbit">Konten Penerbit</string>
+    <string name="share">Share</string>
+    <string name="about">About</string>
+    <string name="profile_name">Adi Chondro</string>
+    <string name="profile_email">gladichondro@gmail.com</string>
+    <string name="OFF_Favorite">OFF Favorite</string>
+    <string name="contact_me">Contact Me</string>
+</resources>

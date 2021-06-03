@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/photo"
+            app:civ_border_width="0.1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/profile_name"
+            android:textColor="@color/secondary_text"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/profile_email"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_contact"
+            style="@style/ButtonGeneral"
+            android:layout_marginTop="30dp"
+            android:drawableRight="@drawable/ic_iconfinder_rounded_linkedin2_svg_5282542"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/contact_me" />
+
+    </LinearLayout>
+
+</ScrollView>

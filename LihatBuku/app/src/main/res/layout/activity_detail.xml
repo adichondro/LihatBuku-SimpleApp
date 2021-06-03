@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/tv_data_received_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                tools:src="@tools:sample/backgrounds/scenic" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_data_received_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/books_name"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tv_data_received_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingMultiplier="1"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/tahun_terbit" />
+
+        <TextView
+            android:id="@+id/tv_data_received_keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingMultiplier="1"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/content_text" />
+
+        <TextView
+            android:id="@+id/tv_data_received_informasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/book_info"
+            android:textColor="@color/colorSubtitle"
+            android:textSize="13sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tv_data_received_infoauthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/book_author"
+                    android:textColor="@color/colorSubtitle"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_data_received_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/content_author"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tv_data_received_infopenerbit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/display_penerbit"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorSubtitle"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_data_received_penerbit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/contain_penerbit"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn_share_detail"
+            style="@style/ButtonGeneral"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/share" />
+    </LinearLayout>
+</ScrollView>
